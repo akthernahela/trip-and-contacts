@@ -3,6 +3,7 @@ import { Trips } from '../assets/Trips';
 
 function TripDetail() {
     const { tripId } = useParams();
+    const trip = Trips.find(trip => trip.id === Number(tripId));
 
     return (
         <>
