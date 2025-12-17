@@ -8,6 +8,7 @@ function TripDetail() {
     if (!trip) {
         return <p>Viaggio non trovato</p>;
     }
+    const [tabAttiva, setTabAttiva] = useState('trip');
 
     return (
         <>
