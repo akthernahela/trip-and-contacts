@@ -16,7 +16,10 @@ function TripDetail() {
                 <div className="card-header">
                     <ul className="nav nav-tabs card-header-tabs">
                         <li className="nav-item">
-                            <a className="nav-link active" aria-current="true" href="#">Trip</a>
+                            <button
+                                className={`nav-link ${tabAttiva === 'trip' ? 'active' : ''}`}
+                                onClick={() => setTabAttiva('trip')}
+                            >Trip</button>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link" aria-current="true" href="#">Participants Details</a>
