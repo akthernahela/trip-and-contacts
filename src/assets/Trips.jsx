@@ -68,7 +68,7 @@ const Trips = [
                 name: 'Matteo Sini',
                 email: 'matteo.sini@example.com',
                 phone: '+39 333 4567890',
-                emergencyContact: 'Amynela - +39 333 8765432'
+                emergencyContact: 'Amynela Sini - +39 333 8765432'
             },
             {
                 id: 6,
