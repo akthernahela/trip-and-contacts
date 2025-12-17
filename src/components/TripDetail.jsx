@@ -1,9 +1,13 @@
 import { useParams, Link } from 'react-router-dom';
-import { Trips } from '../assets/Trips';
+import Trips from '../assets/Trips';
 
 function TripDetail() {
     const { tripId } = useParams();
     const trip = Trips.find(trip => trip.id === Number(tripId));
+
+    if (!trip) {
+        return <p>Viaggio non trovato</p>;
+    }
 
     return (
         <>
