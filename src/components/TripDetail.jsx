@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import Trips from '../assets/Trips';
+import { useState } from 'react';
 
 function TripDetail() {
     const { tripId } = useParams();
@@ -27,16 +28,31 @@ function TripDetail() {
                     </ul>
                 </div>
                 <div className="card-body">
-                    <h2>{trip.destination}</h2>
-                    <p>{trip.startDate} → {trip.endDate}</p>
-                    <h3>Partecipanti</h3>
-                    <ul>
-                        {trip.participants.map(participant => (
-                            <li className='list-unstyled' key={participant.id}><Link to={`/trip/${trip.id}/${participant.id}`}>{participant.name}</Link></li>
-                        ))}
-                    </ul>
+                    {tabAttiva === 'trip' ? (
+                        <div>
+                            <h2>{trip.destination}</h2>
+                            <p>{trip.startDate} → {trip.endDate}</p>
+                            <h3>Partecipanti</h3>
+                            <ul>
+                                {trip.participants.map(participant => (
+                                    <li className='list-unstyled' key={participant.id}><Link to={`/trip/${trip.id}/${participant.id}`}>{participant.name}</Link></li>
+                                ))}
+                            </ul>
 
-                    <Link className="btn btn-dark mt-auto" to="/">Torna alla lista</Link>
+                            <Link className="btn btn-dark mt-auto" to="/">Torna alla lista</Link>
+                        </div>
+                    ) : (
+                        <div>
+                            <h3>Lista Partecipanti</h3>
+                            <ul>
+                                {trip.participants.map(participant => (
+                                    <li className='list-unstyled' key={participant.id}>
+                                        <Link to={`/trip/${trip.id}/${participant.id}`}>{participant.name}</Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    )}
                 </div>
             </div>
         </>
