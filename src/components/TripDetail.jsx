@@ -9,6 +9,12 @@ function TripDetail() {
         <>
             <h2>{trip.destination}</h2>
             <p>{trip.startDate} → {trip.endDate}</p>
+            <h3>Partecipanti</h3>
+            <ul>
+                {trip.participants.map(participant => (
+                    <li key={participant.id}>{participant.name}</li>
+                ))}
+            </ul>
 
             <Link className="btn btn-dark mt-auto" to="/">Torna alla lista</Link>
 
