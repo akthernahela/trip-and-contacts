@@ -5,8 +5,20 @@ const Trips = [
         startDate: '2025-06-01',
         endDate: '2025-06-10',
         participants: [
-            { id: 1, name: 'Mario Rossi' },
-            { id: 2, name: 'Anna Verdi' }
+            {
+                id: 1,
+                name: 'Mario Rossi',
+                email: 'mario@example.com',
+                phone: '+39 333 1234567',
+                emergencyContact: 'Laura Rossi - +39 333 7654321'
+            },
+            {
+                id: 2,
+                name: 'Anna Verdi',
+                email: 'anna@example.com',
+                phone: '+39 333 2345678',
+                emergencyContact: 'Paolo Verdi - +39 333 8765432'
+            }
         ]
     },
     {
