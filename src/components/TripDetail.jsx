@@ -31,7 +31,7 @@ function TripDetail() {
                     <h3>Partecipanti</h3>
                     <ul>
                         {trip.participants.map(participant => (
-                            <li className='list-unstyled' key={participant.id}>{participant.name}</li>
+                            <li className='list-unstyled' key={participant.id}><a href="">{participant.name}</a></li>
                         ))}
                     </ul>
 
