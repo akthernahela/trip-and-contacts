@@ -11,7 +11,7 @@ function App() {
         <div className="container mt-5">
           <Routes>
             <Route path="/" element={<TripList />} />
-            <Route path="/trip/:id" element={<TripDetail />} />
+            <Route path="/trip/:tripId" element={<TripDetail />} />
           </Routes>
         </div>
       </BrowserRouter>
