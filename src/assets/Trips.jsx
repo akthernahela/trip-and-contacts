@@ -27,9 +27,27 @@ const Trips = [
         startDate: '2025-07-05',
         endDate: '2025-07-12',
         participants: [
-            { id: 3, name: 'Luigi Bianchi' },
-            { id: 5, name: 'Matteo Sini' },
-            { id: 6, name: 'Amy Santiago' }
+            {
+                id: 3,
+                name: 'Luigi Bianchi',
+                email: 'luigi.bianchi@example.com',
+                phone: '+39 333 3456789',
+                emergencyContact: 'Giulia Bianchi - +39 333 9876543'
+            },
+            {
+                id: 5,
+                name: 'Matteo Sini',
+                email: 'matteo.sini@example.com',
+                phone: '+39 333 4567890',
+                emergencyContact: 'Amynela Sini - +39 333 8765432'
+            },
+            {
+                id: 6,
+                name: 'Amy Santiago',
+                email: 'amy.santiago@example.com',
+                phone: '+44 20 1234 5678',
+                emergencyContact: 'Jake Peralta - +44 20 8765 4321'
+            }
         ]
     },
     {
@@ -38,9 +56,27 @@ const Trips = [
         startDate: '2025-08-15',
         endDate: '2025-08-22',
         participants: [
-            { id: 4, name: 'Yasmin Orellana' },
-            { id: 5, name: 'Matteo Sini' },
-            { id: 6, name: 'Amy Santiago' }
+            {
+                id: 4,
+                name: 'Yasmin Orellana',
+                email: 'yasminorellana@example.com',
+                phone: '+39 333 5678901',
+                emergencyContact: 'Carlos Orellana - +39 333 1098765'
+            },
+            {
+                id: 5,
+                name: 'Matteo Sini',
+                email: 'matteo.sini@example.com',
+                phone: '+39 333 4567890',
+                emergencyContact: 'Amynela - +39 333 8765432'
+            },
+            {
+                id: 6,
+                name: 'Amy Santiago',
+                email: 'amy.santiago@example.com',
+                phone: '+44 20 1234 5678',
+                emergencyContact: 'Jake Peralta - +44 20 8765 4321'
+            }
         ]
     }
 ];
