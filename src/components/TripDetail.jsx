@@ -7,6 +7,9 @@ function TripDetail() {
 
     return (
         <>
+            <h2>{trip.destination}</h2>
+            <p>{trip.startDate} → {trip.endDate}</p>
+
             <Link className="btn btn-dark mt-auto" to="/">Torna alla lista</Link>
 
         </>
