@@ -11,6 +11,9 @@ function Header() {
             )
         };
     });
+    const theOne = searchedOne.filter(trip =>
+        trip.participants.length > 0
+    );
 
     return (
         <>
