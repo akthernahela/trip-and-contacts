@@ -3,6 +3,14 @@ import Trips from './Trips'
 
 function Header() {
     const [searchTerm, setSearchTerm] = useState("");
+    const searchedOne = Trips.map(trip => {
+        return {
+            ...trip,
+            participants: trip.participants.filter(participant =>
+                participant.name.toLowerCase().includes(searchTerm.toLowerCase())
+            )
+        };
+    });
 
     return (
         <>
