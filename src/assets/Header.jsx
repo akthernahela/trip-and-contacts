@@ -47,7 +47,7 @@ function Header() {
 
                         </ul>
                         <form className="d-flex" role="search" onSubmit={(event) => event.preventDefault()}>
-                            <input className="form-control me-2" type="search" placeholder="Search Trips, Participant, New Journey" aria-label="Search" />
+                            <input className="form-control me-2" value={searchTerm} type="search" placeholder="Search for Participant..." aria-label="Search" />
                             <button className="btn btn-outline-dark" type="submit">Search</button>
                         </form>
                     </div>
