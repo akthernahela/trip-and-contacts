@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Trips from './Trips'
 
 function Header() {
+    const [searchTerm, setSearchTerm] = useState("");
 
     return (
         <>
