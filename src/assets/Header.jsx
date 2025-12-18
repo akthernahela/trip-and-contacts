@@ -53,8 +53,23 @@ function Header() {
                     </div>
                 </div>
             </nav>
+            <div className="container m-3">
+                {searchTerm && theOne.map(trip => (
+                    <ol className="list-group list-group-numbered" key={trip.id}>
+                        <li className="list-group-item d-flex justify-content-between align-items-start">
+                            <div className="ms-2 me-auto">
+                                <div className="fw-bold">Viaggio a {trip.destination}</div>
+                                {trip.participants.map(participant => (
+                                    <li key={participant.id}>{participant.name}</li>
+                                ))}
+                            </div>
+                        </li>
+                    </ol>
+                ))}
+            </div>
         </>
     )
 }
 
 export default Header;
+
