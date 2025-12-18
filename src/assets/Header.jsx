@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Trips from './Trips'
 
 function Header() {
 
